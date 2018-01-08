@@ -1,0 +1,25 @@
+{
+  "DemandeTravaux": [
+    {
+      "numero": "02584",
+      "destinataire": "Service Informatique",
+      "categorie": "Matériels - Ordinateur",
+      "descriptif": "Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.",
+      "status": "Resolue"
+    },
+    {
+      "numero": "02774",
+      "destinataire": "Service Informatique",
+      "categorie": "Matériels - Ecran",
+      "descriptif": "Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.",
+      "status": "En cours"
+    },
+    {
+      "numero": "02984",
+      "destinataire": "Département Informatique IUT",
+      "categorie": "Logiciels - Licence",
+      "descriptif": "Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.",
+      "status": "Resolue"
+    }
+  ]
+}

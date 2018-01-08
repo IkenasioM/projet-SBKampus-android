@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ikena.sbkampus.CategorieActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_categorie">
+
+    <TextView
+        android:id="@+id/label_etape2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@drawable/background_entete"
+        android:textColor="@android:color/white"
+        android:text="Etape 2/5" />
+
+    <TextView
+        android:id="@+id/label_categorie"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Choisir une categorie"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorie"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/borderblack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:background="@drawable/borderblack"
+        android:id="@+id/listSubcategorie"
+        android:layout_width="match_parent"
+        android:layout_weight="100"
+        android:layout_marginBottom="15dp"
+        android:layout_height="fill_parent" >
+
+    </ListView>
+
+</LinearLayout>

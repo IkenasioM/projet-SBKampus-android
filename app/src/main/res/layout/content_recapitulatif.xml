@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ikena.sbkampus.RecapitulatifActivity"
+    tools:showIn="@layout/activity_recapitulatif">
+
+    <TextView
+        android:id="@+id/label_etape1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@drawable/background_entete"
+        android:textColor="@android:color/white"
+        android:text="Etape 5/5"
+        android:layout_marginBottom="12dp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/background_frame_recap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/label_destinataire_recap"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Destinataire" />
+
+                <TextView
+                    android:id="@+id/destinataire_recap"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/label_codemandeur_recap"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Codemandeur" />
+
+                <TextView
+                    android:id="@+id/codemandeur_recap"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/label_categorie_recap"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Categorie" />
+
+                <TextView
+                    android:id="@+id/categorie_recap"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/label_date_recap"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Date butoire" />
+
+                <TextView
+                    android:id="@+id/date_recap"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/label_descirptif_recap"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Description" />
+
+                <TextView
+                    android:id="@+id/descirptif_recap"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <Button
+            android:id="@+id/button_modifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:text="Modifier" />
+
+        <Button
+            android:id="@+id/button_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="Envoyer" />
+    </RelativeLayout>
+
+</LinearLayout>

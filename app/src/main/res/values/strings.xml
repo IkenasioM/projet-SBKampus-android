@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SBKampus</string>
+    <string name="title_activity_destinataire">Destinataire</string>
+    <string-array name="spinner">
+        <item>Service Informatique</item>
+        <item>Maintenance</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_categorie">Categorie</string>
+    <string-array name="spinnerCategorie">
+        <item>Matériels</item>
+        <item>Logiciels</item>
+    </string-array>
+    <string name="title_activity_descriptif">Description</string>
+    <string name="title_activity_scan">Scan</string>
+    <string name="title_activity_recapitulatif">Recapitulatif</string>
+</resources>

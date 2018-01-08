@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.ikena.sbkampus.ScanActivity"
+    tools:showIn="@layout/activity_scan">
+
+    <TextView
+        android:id="@+id/label_etape4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@drawable/background_entete"
+        android:textColor="@android:color/white"
+        android:text="Etape 4/5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Scanner le code" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/imageView_Scan"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="9"
+            android:background="@drawable/background_imageview" />
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_scan"
+            android:elevation="2dp"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button_scan"
+            android:layout_alignEnd="@+id/button_scan"
+            android:layout_alignLeft="@+id/button_scan"
+            android:layout_alignRight="@+id/button_scan"
+            android:layout_alignStart="@+id/button_scan"
+            android:layout_alignTop="@+id/button_scan"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:layout_weight="0"
+        android:text="Suivant" />
+
+</LinearLayout>

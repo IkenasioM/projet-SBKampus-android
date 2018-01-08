@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ikena.sbkampus.DescriptifActivity"
+    tools:showIn="@layout/activity_descriptif">
+
+
+    <TextView
+        android:id="@+id/label_etape3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@drawable/background_entete"
+        android:textColor="@android:color/white"
+        android:text="Etape 3/5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                        android:id="@+id/label_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Description de la demande"
+                        android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_desciption"
+                android:layout_width="match_parent"
+                android:layout_height="125sp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/borderblack"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Decriver la situation..."
+                android:inputType="textMultiLine"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/label_dateIntervention"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Date d'intervention souhaitée"
+                android:textSize="18sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:datePickerMode="calendar"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/background_datepicker"
+                android:calendarTextColor="@color/colorBlue"></DatePicker>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/button"
+                android:text="Suivant"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
